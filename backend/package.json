@@ -1,0 +1,20 @@
+{
+  "name": "text-summary-ai-be",
+  "version": "1.0.0",
+  "description": "backend for a text summary ai application",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Adeyemo",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.12.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.9"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "ai-text-summary-app",
+  "version": "1.0.0",
+  "description": "ai text summary application",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "install": "npm install",
+    "dev": "npm run dev --workspaces",
+    "build": "npm run build --workspaces"
+  },
+  "author": "Daniel Adeyemo",
+  "license": "ISC"
+}
