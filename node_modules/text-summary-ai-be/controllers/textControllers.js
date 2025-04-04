@@ -19,8 +19,10 @@ exports.summarize = catchAsync(async (req, res, next) => {
       }
     );
 
-    res.json({ summary: response.data[0].summary_text });
+    // Return the summary as JSON
+    return res.json({ summary: response.data[0].summary_text });
   } catch (error) {
+    // Properly handle error and pass to error middleware
     return next(new appEror("Summarization failed", 400));
   }
 });

@@ -2,9 +2,19 @@ const express = require("express");
 const morgan = require("morgan");
 const textRouter = require("./routes/textRouter");
 const errorController = require("./controllers/errorController");
+const cors = require("cors");
+
 const app = express();
 
 app.use(express.json());
+
+app.use(
+  cors({
+    origin: "http://localhost:5173", // Adjust this if your frontend runs on a different port
+    methods: "GET,POST,PUT,DELETE", // Allowed HTTP methods
+    credentials: true, // Allow cookies and authentication headers
+  })
+);
 
 if (process.env.NODE_ENV === "development") {
   app.use(morgan("dev"));
