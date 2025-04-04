@@ -5,9 +5,8 @@
   "main": "server.js",
   "scripts": {
     "dev": "nodemon server.js",
-    "start": "node dist/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm run build"
+    "start": "node server.js",
+    "build": "echo 'Backend built'"
   },
   "author": "Daniel Adeyemo",
   "license": "ISC",
