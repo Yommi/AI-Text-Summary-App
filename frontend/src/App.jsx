@@ -22,7 +22,7 @@ export default function Summarizer() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/v1/texts/summarize",
+        "https://ai-text-summary-app-m8nv.onrender.com/api/v1/texts/summarize",
         {
           method: "POST",
           headers: {
